@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Custom views -->
+
+    <attr name="customTypeface" format="enum">
+        <enum name="Regular" value="1" />
+        <enum name="Bold" value="2" />
+        <enum name="Italic" value="3" />
+        <enum name="Medium" value="4" />
+        <enum name="SemiBold" value="5" />
+    </attr>
+
+    <declare-styleable name="Button">
+        <attr name="customTypeface" />
+    </declare-styleable>
+
+    <declare-styleable name="EditText">
+        <attr name="customTypeface" />
+    </declare-styleable>
+
+    <declare-styleable name="TextView">
+        <attr name="customTypeface" />
+        <attr name="isMandatory" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RadioButton">
+        <attr name="customTypeface" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TextViewContainer">
+        <attr name="tvc_label_value" format="string" />
+        <attr name="tvc_text_value" format="string" />
+        <attr name="tvc_text_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="tvc_is_mandatory" format="boolean" />
+        <attr name="tvc_show_right_side_icon" format="boolean" />
+        <attr name="tvc_show_error_message" format="boolean" />
+        <attr name="tvc_error_text" format="string" />
+        <attr name="tvc_right_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EditViewContainer">
+        <attr name="evc_label_value" format="string" />
+        <attr name="evc_text_hint" format="string" />
+        <attr name="evc_text_value" format="string" />
+        <attr name="evc_text_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="evc_is_mandatory" format="boolean" />
+        <attr name="evc_show_right_side_icon" format="boolean" />
+        <attr name="evc_show_error_message" format="boolean" />
+        <attr name="evc_error_text" format="string" />
+        <attr name="evc_input_type" format="enum">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+            <enum name="phone" value="2" />
+            <enum name="numberDecimal" value="3" />
+            <enum name="textEmailAddress" value="4" />
+            <enum name="textPassword" value="5" />
+        </attr>
+        <attr name="evc_height" format="integer" />
+        <attr name="evc_maxLength" format="integer" />
+        <attr name="evc_digits" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AutocompleteViewContainer">
+        <attr name="acvc_label_value" format="string" />
+        <attr name="acvc_text_hint" format="string" />
+        <attr name="acvc_text_value" format="string" />
+        <attr name="acvc_text_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="acvc_is_mandatory" format="boolean" />
+        <attr name="acvc_show_right_side_icon" format="boolean" />
+        <attr name="acvc_show_error_message" format="boolean" />
+        <attr name="acvc_error_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="EditViewBigContainer">
+        <attr name="evbc_label_value" format="string" />
+        <attr name="evbc_text_hint" format="string" />
+        <attr name="evbc_text_value" format="string" />
+        <attr name="evbc_text_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="evbc_is_mandatory" format="boolean" />
+        <attr name="evbc_show_right_side_icon" format="boolean" />
+        <attr name="evbc_show_error_message" format="boolean" />
+        <attr name="evbc_error_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SpinnerContainer">
+        <attr name="sc_label_value" format="string" />
+        <attr name="sc_is_mandatory" format="boolean" />
+        <attr name="sc_show_error_message" format="boolean" />
+        <attr name="sc_error_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageContainer">
+        <attr name="cic_initials" format="string" />
+        <attr name="cic_textSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flFlow" format="boolean" />
+        <attr name="flChildSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flMinChildSpacing" format="dimension" />
+        <attr name="flChildSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+            <enum name="align" value="-65537" />
+        </attr>
+        <attr name="flRowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flRtl" format="boolean" />
+        <attr name="flMaxRows" format="integer" />
+        <attr name="flRowVerticalGravity" format="enum">
+            <enum name="auto" value="-65536" />
+            <enum name="top" value="0x30" />
+            <enum name="center" value="0x10" />
+            <enum name="bottom" value="0x50" />
+        </attr>
+        <attr name="android:gravity" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,318 @@
+<resources>
+
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/logo_blue_color</item>
+        <!--<item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/green</item>-->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/logo_blue_color</item>
+        <!--<item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/green</item>-->
+    </style>
+
+    <style name="NormalEditText">
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:background">@drawable/bg_edit_text_normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="hintTextColor">@color/text_color_black_light</item>
+        <item name="customTypeface">Regular</item>
+    </style>
+
+    <style name="ErrorText">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="customTypeface">Regular</item>
+        <item name="singleLine">true</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="NormalTextView">
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:background">@drawable/bg_edit_text_normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="customTypeface">Regular</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="customTypeface">Bold</item>
+    </style>
+
+    <style name="Line">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/dark_grey</item>
+    </style>
+
+    <style name="BigLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:background">@color/big_line_color</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RightDropdownImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="ExpandCollapseSubLabelParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ExpandCollapseSubLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="customTypeface">Medium</item>
+    </style>
+
+    <style name="ExpandCollapseSubValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="customTypeface">Regular</item>
+    </style>
+    <!--Profile Styling-->
+
+    <style name="ProfileHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/bg_header_profile</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+
+    <style name="ProfileHeaderTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="customTypeface">Medium</item>
+    </style>
+
+    <style name="ProfileHeaderRightIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="ProfileLabelSuperParent">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_grey</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:tag">@string/off</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="ProfileLabelParent">
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="ProfileLabel">
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="customTypeface">Medium</item>
+        <item name="singleLine">true</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="ProfileValue">
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="customTypeface">Regular</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="singleLine">true</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="InnerTitleHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/bg_counter</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+
+    <style name="InnerTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="customTypeface">Regular</item>
+    </style>
+
+    <style name="InnerTitleValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_toStartOf">@+id/ivRightDownArrow</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textColor">@color/logo_blue_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="customTypeface">SemiBold</item>
+    </style>
+
+    <style name="InnerRightImage">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="srcCompat">@drawable/vector_right</item>
+    </style>
+
+    <style name="InnerSubView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/bg_grey</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ProgressViewStyle">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="lottie_colorFilter">@color/text_color_blue</item>
+        <item name="lottie_loop">true</item>
+        <item name="lottie_rawRes">@raw/loader</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="ContainerBasic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/logo_blue_color</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/grey_black</item>
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/grey_black</item>
+    </style>
+
+    <style name="ToolTipAltStyle" parent="ToolTipLayoutDefaultStyle">
+        <item name="ttlm_padding">16dp</item>
+        <item name="ttlm_backgroundColor">@color/text_color_black</item>
+        <item name="ttlm_cornerRadius">6dp</item>
+        <item name="ttlm_arrowRatio">1.2</item>
+        <item name="ttlm_overlayStyle">@style/ToolTipOverlayAltStyle</item>
+        <item name="ttlm_animationStyle">@style/ToolTipAltAnimation</item>
+        <item name="ttlm_textStyle">@style/ToolTipAltTextStyle</item>
+    </style>
+
+    <style name="ToolTipAltTextStyle" parent="ToolTipTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ToolTipOverlayAltStyle" parent="ToolTipOverlayDefaultStyle">
+        <item name="android:color">#FF333333</item>
+        <item name="android:alpha">0.3</item>
+    </style>
+
+    <style name="ToolTipAltAnimation">
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+    </style>
+</resources>

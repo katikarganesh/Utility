@@ -1,25 +1,4 @@
-package com.instazen.app.utils;
 
-import android.app.Activity
-import android.app.Dialog
-import android.content.Context
-import android.graphics.Color
-import android.text.Spannable
-import android.text.SpannableStringBuilder
-import android.text.style.ForegroundColorSpan
-import android.util.DisplayMetrics
-import android.view.Window
-import android.widget.TextView
-import com.instazen.app.App
-import com.instazen.app.R
-import com.instazen.app.models.*
-import com.instazen.app.models.task_detail.CustomFieldDTO
-import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.Period
-import java.time.format.DateTimeFormatter
-import java.util.*
-import java.util.regex.Pattern
 
 
 object Utils {

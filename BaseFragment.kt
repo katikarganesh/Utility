@@ -1,12 +1,4 @@
-package com.instazen.app
 
-import android.app.Dialog
-import android.content.Intent
-import android.widget.Toast
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
-import com.instazen.app.apis.UserViewModel
-import com.instazen.app.utils.Utils
 
 open class BaseFragment : Fragment() {
 

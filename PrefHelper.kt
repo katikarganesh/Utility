@@ -1,13 +1,4 @@
-package com.instazen.app.utils
 
-import android.content.Context
-import android.content.SharedPreferences
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener
-import com.google.gson.Gson
-import com.google.gson.internal.Primitives
-import com.google.gson.reflect.TypeToken
-import com.instazen.app.R
-import org.json.JSONArray
 
 class PrefHelper {
     private var prefs: SharedPreferences

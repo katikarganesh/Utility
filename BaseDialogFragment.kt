@@ -1,9 +1,3 @@
-package com.instazen.app.dialog
-
-import android.app.Dialog
-import android.os.Bundle
-import androidx.fragment.app.DialogFragment
-import com.instazen.app.apis.isInternetConnected
 
 
 open class BaseDialogFragment : DialogFragment() {

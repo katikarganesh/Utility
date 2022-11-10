@@ -1,8 +1,4 @@
-package com.instazen.app.adapters
 
-import android.content.Context
-import androidx.appcompat.widget.ListPopupWindow
-import com.instazen.app.utils.Utils
 
 class CustomListPopupWindow(context: Context?) : ListPopupWindow(context!!) {
     private var isShowing = false

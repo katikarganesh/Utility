@@ -1,3 +1,35 @@
-implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
-    implementation "com.squareup.okhttp3:logging-interceptor:$interceptor"
+constructor(anyObject: Any?) {
+        //Logger.d("=========================")
+        //Logger.d("==> Print Map")
+        var errorMessage: String? = null
+        try {
+            val mapObject: Map<String, Any> = anyObject as Map<String, Any>
+            var code: String? = null
+            for ((key, value) in mapObject) {
+                if (key == "detail") {
+                    //Logger.d("==> $key = $value")
+                    when (value) {
+                        is String -> {
+                            errorMessage = value
+                            //Logger.d("==>String error: $value")
+                        }
+                        else -> {
+                            val innerMap: Map<String, Any> = value as Map<String, Any>
+                            for ((iKey, iValue) in innerMap) {
+                                //Logger.d("===> Inner: $iKey = ${innerMap[iKey].toString()}")
+                                errorMessage = innerMap[iKey].toString()
+                            }
+                            //Logger.d("==>Object error: $value")
+                        }
+                    }
+                    break
+                }
+            }
+            errorMessage = errorMessage?.replace("[", "")?.replace("]", "")
+        } catch (e: Exception) {
+            errorMessage = "Error: Something went wrong"
+        }
+
+        //Logger.d("==> Actual Error: $errorMessage")
+        apiError = APIError(errorMessage, "")
+    }
